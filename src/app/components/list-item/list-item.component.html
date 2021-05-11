@@ -1,0 +1,7 @@
+<div class="list-item" [class.completed]="itemTodos.completed">
+  <div>
+    <input [id]="itemTodos.id" type="checkbox" (change)="toggleDone()" [checked]="itemTodos.completed">
+    <label [for]="itemTodos.id">{{itemTodos.title}}</label>
+  </div>
+  <button (click)="deleteItem(itemTodos.id)">Delete</button>
+</div>

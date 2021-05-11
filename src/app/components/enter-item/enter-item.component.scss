@@ -1,0 +1,35 @@
+form {
+  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+
+  input {
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    width: 100%;
+    font-size: 20px;
+  }
+  button {
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    white-space: nowrap;
+
+    &:hover {
+      border-color: #ff0a54;
+      color: #ff477e;
+    }
+  }
+}
+.error-text {
+  color:#f72585;
+}

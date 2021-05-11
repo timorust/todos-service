@@ -1,0 +1,42 @@
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  &.completed {
+    background: #06d6a0;
+  }
+  label {
+    &::before {
+      margin: 0 10px 0 0;
+    }
+  }
+
+  input[type="checkbox"] { display: none;}
+
+  input[type="checkbox"] + label {
+    &::before {
+      content: '🤍';
+    }
+  }
+  input[type="checkbox"]:checked + label {
+    &::before {
+      content: ' 💚 ';
+    }
+  }
+
+  button {
+    border: 0;
+    background: rgba(0,0,0,.4);
+    color: #fff;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(0,0,0,.6);
+    }
+  }
+}
